@@ -1,0 +1,242 @@
+ *{
+	 margin: 0;
+	 padding: 0;
+ }
+.outer {
+	height: 18vh;
+	width: auto;
+	border-radius: 0px 120px 120px 0px;
+	background-color: red;
+	margin-bottom: 2px;
+}
+/* grey background */
+.inner {
+	height: 18vh;
+	width: 70vw;
+	margin-left: 20px;
+	border-radius: 0px 120px 120px 0px;
+	background-color: #E0E0E0;
+}
+/* label */
+.inner img {
+	float: left;
+	width: 6vw;
+	height: 6vw;
+	margin-left: 5vw;
+	margin-top: 2vw;
+}
+/* content */
+.header {
+	float: inherit;
+	margin-left: 32vw;
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.content {
+
+	margin-left: 32vw; 
+	font-size: 20px;
+}
+
+/* checkbox style */
+.mark{
+	float: right;
+	align-content: center;
+}
+input[type="checkbox"] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.mark::before {
+	content: '';
+	display: inline-block;
+	width: 4vw;
+	height: 4vw;
+	background: white;
+	/* vertical-align: middle; */
+	margin-right: 105px;
+	margin-top: 25px;
+	box-sizing: border-box;
+	transition: background ease-in .5s;
+}
+
+input[type="checkbox"]:checked+.mark::before {
+	background-color: red;
+	border: 5px #fff solid;
+}
+
+@media screen and (orientation: portrait) {
+	/* this is for iphone4&5 */
+	@media screen and (max-width: 330px) {
+		.inner {
+			height: 12vh;
+		}
+		.outer {
+			height: 12vh;
+		}
+		.inner img{
+			width:12vw;
+			height: 12vw;
+		}
+		.inner .header{
+			margin-left: 22vw;
+			font-size: 28px;
+		}
+		.inner .content{
+			font-size: 13px;
+			margin-left: 23vw;
+		}
+		.mark::before {
+			margin-right: 35px;
+		}
+	}
+
+	/* this is for phones except iphone4&5 */
+	@media screen and (min-width: 330px) and (max-width: 600px) {
+
+			.mark::before {
+				margin-right: 35px;
+				margin-top: 30px;
+			}
+			.outer {
+				height: 12vh;
+				border-radius: 0px 120px 120px 0px;
+				background-color: red;
+			}
+		
+			.inner {
+				height: 12vh;
+				width: 70vw;
+				margin-left: 20px;
+				border-radius: 0px 120px 120px 0px;
+				background-color: #E0E0E0;
+			}
+		
+			.inner img {
+				width: 15vw;
+				height: 15vw;
+				margin-left: 15px;
+				 margin-top: 10px;
+				
+			}
+		
+			.header {
+				font-size: 30px;
+				margin-left: 22vw;
+				font-weight: bolder;
+			}
+
+			.content {
+				font-size: 16px;
+				margin-left: 23vw; 
+
+			}
+		
+	}
+
+	/* this is for ipad version */
+	@media screen and (min-width: 600px) and (max-width: 1024px) {
+			 .header{
+				 margin-left: 25vw;
+				 font-size: 10vw;
+			 }
+			 .content{
+				 margin-left: 26vw;
+				 font-size: 5vw;
+			 }
+			 .inner img{
+				 width:15vw;
+				 height: 15vw;
+				 margin-top: 5vw;
+			 } 
+			.mark::before {
+				margin-top: 10vw;
+			}		 
+	}
+}
+
+@media screen and (orientation:landscape) {
+	
+		@media screen and (max-width: 900px) {
+	
+				.mark::before {
+					margin-right: 35px;
+					margin-top: 30px;
+				}
+				.outer {
+					height: 20vh;
+					border-radius: 0px 120px 120px 0px;
+					background-color: red;
+				}
+			
+				.inner {
+					height: 20vh;
+					width: 70vw;
+					margin-left: 20px;
+					border-radius: 0px 120px 120px 0px;
+					background-color: #E0E0E0;
+				}
+			
+				.inner img {
+					width: 8vw;
+					height: 8vw;
+					margin-left: 15px;
+					 margin-top: 10px;
+					
+				}
+			
+				.header {
+					font-size: 30px;
+					margin-left: 22vw;
+					font-weight: bolder;
+				}
+	
+				.content {
+					font-size: 16px;
+					margin-left: 23vw; 
+	
+				}
+			
+		}
+	
+		/* this is for ipad version */
+		@media screen and (min-width: 900px) and (max-width: 1000px) {
+				 .header{
+					 margin-left: 25vw;
+					 font-size: 10vw;
+				 }
+				 .content{
+					 margin-left: 26vw;
+					 font-size: 5vw;
+				 }
+				 .inner img{
+					 width:15vw;
+					 height: 15vw;
+					 margin-top: 5vw;
+				 } 
+				.mark::before {
+					margin-top: 10vw;
+				}		 
+		}
+/* 		.header{
+			 margin-left: 25vw;
+			 font-size: 3vw;
+		 }
+		 .content{
+			 margin-left: 25vw;
+			 font-size: 3vw;
+		 }
+		 .inner img{
+			 width:9vw;
+			 height: 8vw;
+			 margin-top: 1vw;
+		 }
+		 .mark::before {
+			margin-top: 3vw;
+		}	 */
+	 
+ }
+
+

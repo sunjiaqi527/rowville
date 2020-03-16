@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  /* background-color: #F2F2F2; */
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+		height: 114px;
+		width: 114px;
+		background-color: #E0E0E0;
+		float: left;
+		/* display: inline; */
+}
+.topnav img{
+	width: 50%;
+	align-content: center;
+	margin: 25%;
+}
+a{
+	color: black;
+	font-family: 'Bitter', serif;
+	
+}
+.topnavlogo img {
+	height: 108px;
+}
+
+#video-container {
+	padding: 10px;
+	background-color: #ccc;
+	width: 100%;
+	/*width: 50%;
+	height: 70%;
+	align: center;
+	*/
+	
+}
+#video {
+	margin: 0 auto;
+	width: 50%;
+	height: 400px;
+}
+
+
+button {
+	display: block;
+	margin: 0 auto;
+	background-color: #FF0032;
+	color: #f2f2f2;
+	border-radius: 40px;
+	padding: 18px;
+	font-size: 18px;
+	text-decoration: none;
+	
+	
+}
+button a {
+	color: #f2f2f2;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+}
+
+h1{
+	font-size: 60px;
+	font-family: 'Bitter', serif;
+	color: #FF0032;
+	float: left;
+	margin-left: 5%;
+	border-bottom: 5px solid #FF0032 ;
+}
+h2{
+	font-family: 'Bitter', serif;
+	color: #FF0032
+}
+h3{
+	font-family: 'Bitter', serif;
+	color: #FF0032
+}
+
+/* Style the content */
+.content {
+	  color: black;
+    /* padding: 10px; */
+}
+.contentright{
+	margin-top:-5px ;
+	margin-left: 25%;
+	background-color: #E0E0E0;
+	width: 75%;
+	height: auto;
+	padding: 70px;
+	padding-top: 150px;
+	border-bottom-left-radius: 80px;
+	/* text-align: center; */
+	
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+	margin-top: 10px;
+	padding: 10px;
+    color: black;
+    text-align: center;
+}
+@media screen and (max-width:600px) {
+	h1{font-size:25px;}
+	.contentright{padding: 20px;
+	padding-top: 70px;
+	font-size: 18px;}
+	.topnav{
+		height: 50px;
+		width: 50px;
+	}
+	.topnavlogo img{
+		height: 45px;
+	}
+}
+
+@media screen and (min-width:600px) and (max-width:1024px) {
+	.topnavlogo img {
+		height: 10vh;
+	}
+}

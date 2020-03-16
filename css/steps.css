@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  /* background-color: #F2F2F2; */
+}
+
+.checkboxContainer {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  margin: 20px auto;
+  bottom:50px;
+  right: 48%;
+  z-index: 99;
+  
+  
+  background: #FF0032;
+  box-shadow: #FF0032;
+ 
+}
+.checkboxContainer label {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  background: #F2F2F2;
+  box-shadow: #FF0032;
+  z-index: 99;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+		height: 114px;
+		width: 114px;
+		background-color: #E0E0E0;
+		float: left;
+		/* display: inline; */
+}
+.topnav img{
+	width: 50%;
+	align-content: center;
+	margin: 25%;
+}
+a{
+	color: black;
+	font-family: 'Bitter', serif;
+	
+}
+.topnavlogo img {
+	height: 16vh;
+}
+
+#video-container {
+	padding: 10px;
+	background-color: #ccc;
+	width: 100%;
+	height: 800px;
+	/*width: 50%;
+	height: 70%;
+	align: center;
+	*/
+	
+}
+#video {
+	margin: 0 auto;
+	width: 100%;
+	height: 80%;
+
+}
+
+
+button {
+	display: block;
+	margin: 0 auto;
+	background-color: #FF0032;
+	color: #f2f2f2;
+	border-radius: 40px;
+	padding: 18px;
+	font-size: 18px;
+	text-decoration: none;
+	
+	
+}
+button a {
+	color: #f2f2f2;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+}
+
+#step1{
+	float: left;
+	margin-left: 5%;
+
+	display: block;
+	width: 100%;
+}
+#step1 h1{
+	font-size: 60px;
+	font-family: 'Bitter', serif;
+	color: #FF0032;
+	border-bottom: 5px solid #FF0032 ;
+	width: 20%;
+}
+#step2{
+	float: left;
+	margin-left: 5%;
+
+	display: block;
+	width: 100%;
+}
+#step2 h1{
+	font-size: 60px;
+	font-family: 'Bitter', serif;
+	color: #FF0032;
+	border-bottom: 5px solid #FF0032 ;
+	width: 20%;
+}
+#step1content p{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#step1content h2{
+	font-family: 'Bitter', serif;
+	color: #FF0032;
+	margin-left: 4%;
+}
+#step1content h3{
+	font-family: 'Bitter', serif;
+	color: #FF0032
+}
+
+/* Style the content */
+.content {
+	  color: black;
+    /* padding: 10px; */
+}
+.contentright{
+	margin-top:-5px ;
+	margin-left: 25%;
+	background-color: #E0E0E0;
+	width: 75%;
+	height: auto;
+	padding: 70px;
+	padding-top: 150px;
+	border-bottom-left-radius: 80px;
+	/* text-align: center; */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+	#step1 h1{
+		font-size:25px;
+		width: 30%;
+	}	
+	#step2 h1{
+		font-size:25px;
+		width: 30%;
+	}
+	#step1content h2{
+		font-size:20px;
+		margin-left: 15%;
+		
+	}
+	#step1content h3{
+		font-size:18px;
+		
+	}
+	.checkboxContainer {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  margin: 20px auto;
+  bottom:55px;
+  right: 42%;
+  
+  
+  background: #FF0032;
+  box-shadow: #FF0032;
+ 
+}
+	.contentright{
+		padding: 20px;
+	padding-top: 70px;
+	font-size: 10px;
+	}
+	.topnav{
+		height: 50px;
+		width: 50px;
+	}
+	.topnavlogo img{
+		height: 45px;
+	}
+	#video-container{
+		height: 400px;
+	}
+}
+
+
+@media screen and (min-width:600px) and (max-width:1400px) {
+	.topnavlogo img {
+		height: 9vh;
+	}
+	.topnav {
+		width: 9vh;
+		height: 9vh;
+	}
+}
