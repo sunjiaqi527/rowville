@@ -1,0 +1,172 @@
+/* style css for the menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: white;
+	color: #F2F2F2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:center;
+}
+/* style css for hyperlink on the menu */
+.sidenav a {   
+    text-decoration: none;
+    font-size: 30px;
+    color: #F2F2F2;
+    display: block;
+    transition: 0.3s;
+	overflow:hidden;
+}
+/* when hovering over the hyperlink on the menu */
+.sidenav a:hover{
+    background-color: #FFCCD6;
+    color: black;
+}
+
+.sidenav .sidenav1 a{
+    text-decoration: none;
+    font-size: 60px;
+    color: red;
+	background-color: #E0E0E0;
+    display: block;
+    transition: 0.3s;
+	overflow:hidden;
+	float: left;
+	text-align: center;
+	padding: 14px 16px; 
+	height: 114px;
+	width:114px ;
+}
+
+ .sidenav .sidenav2 {
+	text-decoration: none;
+	position: relative;
+	width: 0;
+	height: 30vh; 
+	margin-top:30%;	
+	display: block;
+	transition: 0.3s;
+	padding-top: 10%;
+	
+} 
+
+ .sidenav .sidenav2 a{
+			font-size: 250%;
+			color: black;
+			display: block;
+			transition: 0.3s;
+			text-align: center; 
+
+} 
+/* style for the steps icon */
+.sidenav .sidenav3{
+	position: relative;
+	display: block;
+	transition:0.3s;
+	
+}
+
+
+.sidenav .sidenav3 {
+	text-decoration: none;
+	position: relative;
+	width: 0;
+	height: 30vh; 
+	margin-top:19%;	
+	display: block;
+	transition: 0.3s;
+} 
+.sidenav .sidenav3 .stepicon{
+	float: left;
+	height: 15vh;
+	width: 15%;
+	padding-top: 5px;
+	background-color: #FFCCD6;
+}
+.sidenav .sidenav3 img{
+	width: 8vw;
+	height: 15vh;
+}
+.sidenav .sidenav3 .steparrow{
+	position: absolute;
+	height: 15vh;
+	width: 15%;
+	float: right;
+}
+.sidenav .sidenav3 a{
+	font-size: 250%;
+	color: black;
+	display: block;
+	transition: 0.3s;
+	padding-top: 30px;
+	text-align: left;
+	margin-bottom: 1%;
+	height: 15vh;
+	width: 60%;
+	background-color: #E0E0E0;
+	border-radius: 0px 40px 40px 0px;
+}
+
+
+@media screen and (orientation: portrait) {
+  /*竖屏 css*/
+		/* style for the iphone4 */
+		@media screen and (max-width: 330px) {
+			.sidenav .sidenav2{
+				margin-top: 40%;
+			}
+			.sidenav .sidenav1 a{
+				width: 50px;
+				height: 50px;
+				font-size: 20px;
+				padding: 10px 12px; 
+			}
+		}
+		/* style for the iphone 6/7/8 */
+		@media screen and  (min-width: 330px) and (max-width: 600px) {
+			.sidenav .sidenav2 {
+				margin-top: 50%;
+				}
+			.sidenav a {
+				font-size: 18px;
+				}
+			.sidenav .sidenav1 a{
+				width: 50px;
+				height: 50px;
+				font-size: 24px;
+				padding: 10px 12px; 
+			}
+		}
+		/* style for the ipade & ipade pro */
+		@media screen and (min-width: 600px) and (max-width: 1024px){
+			.sidenav .sidenav2{
+				margin-top: 45%;
+			}
+		} 
+}
+@media screen and (orientation: landscape) {
+  /*横屏 css*/
+
+	@media screen and  (min-width: 330px) and (max-width: 900px) {
+		.sidenav a {
+			font-size: 18px;
+			}
+		.sidenav .sidenav1 a{
+			width: 50px;
+			height: 50px;
+			font-size: 24px;
+			padding: 10px 12px; 
+		}
+		.sidenav .sidenav2{
+			margin-top: 10%;
+		}
+	}
+	/* style for the ipade & ipade pro */
+	@media screen and (min-width: 900px) and (max-width: 1024px){
+		.sidenav .sidenav2{
+			margin-top: 25%;
+		}
+	} 
+	
+}
